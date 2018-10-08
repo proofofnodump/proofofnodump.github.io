@@ -35,7 +35,7 @@ File: scss
 /*Top bar
 *******************/
 .topbar {
-  background: #FFB400;
+  background: #EF3524;
   /* Old browsers */
   background: -moz-linear-gradient(left, #533fd0 0%, #840fb5 100%);
   /* FF3.6-15 */
@@ -66,15 +66,15 @@ File: scss
 /*General Elements
 *******************/
 a {
-  color: #FFB400;
+  color: #EF3524;
 }
 
 a.link:hover, a.link:focus {
-  color: #FFB400 !important;
+  color: #EF3524 !important;
 }
 
 .bg-theme {
-  background-color: #FFB400 !important;
+  background-color: #EF3524 !important;
 }
 
 .pagination > .active > a,
@@ -83,31 +83,31 @@ a.link:hover, a.link:focus {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  background-color: #FFB400;
-  border-color: #FFB400;
+  background-color: #EF3524;
+  border-color: #EF3524;
 }
 
 .right-sidebar .rpanel-title {
-  background: #FFB400;
+  background: #EF3524;
 }
 
 .stylish-table tbody tr:hover, .stylish-table tbody tr.active {
-  border-left: 4px solid #FFB400;
+  border-left: 4px solid #EF3524;
 }
 
 .text-themecolor {
-  color: #FFB400 !important;
+  color: #EF3524 !important;
 }
 
 .profile-tab li a.nav-link.active,
 .customtab li a.nav-link.active {
-  border-bottom: 2px solid #FFB400;
-  color: #FFB400;
+  border-bottom: 2px solid #EF3524;
+  color: #EF3524;
 }
 
 .profile-tab li a.nav-link:hover,
 .customtab li a.nav-link:hover {
-  color: #FFB400;
+  color: #EF3524;
 }
 
 /*******************
@@ -115,16 +115,16 @@ a.link:hover, a.link:focus {
 *******************/
 .btn-themecolor,
 .btn-themecolor.disabled {
-  background: #FFB400;
+  background: #EF3524;
   color: #ffffff;
-  border: 1px solid #FFB400;
+  border: 1px solid #EF3524;
 }
 
 .btn-themecolor:hover,
 .btn-themecolor.disabled:hover {
-  background: #FFB400;
+  background: #EF3524;
   opacity: 0.7;
-  border: 1px solid #FFB400;
+  border: 1px solid #EF3524;
 }
 
 .btn-themecolor.active, .btn-themecolor:focus,
@@ -159,7 +159,7 @@ a.link:hover, a.link:focus {
 }
 
 .sidebar-nav ul li a.active, .sidebar-nav ul li a:hover {
-  color: #FFB400;
+  color: #EF3524;
 }
 
 .sidebar-nav ul li a.active {
@@ -172,7 +172,7 @@ a.link:hover, a.link:focus {
 
 .sidebar-nav > ul > li.active > a, .sidebar-nav > ul > li.active:hover > a {
   color: #ffffff !important;
-  background: #FFB400 !important;
+  background: #EF3524 !important;
 }
 
 .sidebar-nav > ul > li.active > a i, .sidebar-nav > ul > li.active:hover > a i {
@@ -184,7 +184,7 @@ a.link:hover, a.link:focus {
 }
 
 .sidebar-nav > ul > li > a.active i, .sidebar-nav > ul > li > a:hover i {
-  color: #FFB400;
+  color: #EF3524;
 }
 
 .sidebar-nav > ul > li > a i {
@@ -194,7 +194,7 @@ a.link:hover, a.link:focus {
 .sidebar-nav > ul > li > a.active {
   font-weight: 400;
   background: #ffffff;
-  color: #FFB400;
+  color: #EF3524;
 }
 
 .user-profile .profile-text a {
