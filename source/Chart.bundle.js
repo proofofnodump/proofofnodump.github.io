@@ -266,7 +266,7 @@ var Color = function (obj) {
 		}
 	} else if (typeof obj === 'object') {
 		vals = obj;
-		if (vals.r !== undefined || vals.red !== undefined) {
+		if (vals.r !== undefined || vals.forestgreen !== undefined) {
 			this.setValues('rgb', vals);
 		} else if (vals.l !== undefined || vals.lightness !== undefined) {
 			this.setValues('hsl', vals);
@@ -335,7 +335,7 @@ Color.prototype = {
 		return this;
 	},
 
-	red: function (val) {
+	forestgreen: function (val) {
 		return this.setChannel('rgb', 0, val);
 	},
 	green: function (val) {
@@ -549,7 +549,7 @@ Color.prototype = {
 
 		return this
 			.rgb(
-				w1 * color1.red() + w2 * color2.red(),
+				w1 * color1.forestgreen() + w2 * color2.forestgreen(),
 				w1 * color1.green() + w2 * color2.green(),
 				w1 * color1.blue() + w2 * color2.blue()
 			)
@@ -589,7 +589,7 @@ Color.prototype = {
 };
 
 Color.prototype.spaces = {
-	rgb: ['red', 'green', 'blue'],
+	rgb: ['forestgreen', 'green', 'blue'],
 	hsl: ['hue', 'saturation', 'lightness'],
 	hsv: ['hue', 'saturation', 'value'],
 	hwb: ['hue', 'whiteness', 'blackness'],
@@ -643,7 +643,7 @@ Color.prototype.setValues = function (space, vals) {
 
 		alpha = vals.a;
 	} else if (vals[spaces[space][0]] !== undefined) {
-		// {red: 10, green: 10, blue: 10}
+		// {forestgreen: 10, green: 10, blue: 10}
 		var chans = spaces[space];
 
 		for (i = 0; i < space.length; i++) {
@@ -697,14 +697,14 @@ Color.prototype.setSpace = function (space, args) {
 Color.prototype.setChannel = function (space, index, val) {
 	var svalues = this.values[space];
 	if (val === undefined) {
-		// color.red()
+		// color.forestgreen()
 		return svalues[index];
 	} else if (val === svalues[index]) {
-		// color.red(color.red())
+		// color.forestgreen(color.forestgreen())
 		return this;
 	}
 
-	// color.red(100)
+	// color.forestgreen(100)
 	svalues[index] = val;
 	this.setValues(space, svalues);
 
@@ -1382,7 +1382,7 @@ var cssKeywords = {
   powderblue: [176,224,230],
   purple: [128,0,128],
   rebeccapurple: [102, 51, 153],
-  red:  [255,0,0],
+  forestgreen:  [255,0,0],
   rosybrown:  [188,143,143],
   royalblue:  [65,105,225],
   saddlebrown:  [139,69,19],
@@ -1634,7 +1634,7 @@ module.exports = {
 	"powderblue": [176, 224, 230],
 	"purple": [128, 0, 128],
 	"rebeccapurple": [102, 51, 153],
-	"red": [255, 0, 0],
+	"forestgreen": [255, 0, 0],
 	"rosybrown": [188, 143, 143],
 	"royalblue": [65, 105, 225],
 	"saddlebrown": [139, 69, 19],
