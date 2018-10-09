@@ -33,18 +33,18 @@
 <style>
     @media (min-width: 1024px) {
 .color-box {
-    background: #228B22;
+    background: #FFB22B;
     background: -moz-linear-gradient(left, #533fd0 0%, #840fb5 100%);
     background: -webkit-linear-gradient(left, #533fd0 0%, #840fb5 100%);
-    background: linear-gradient(to right, #228B22 0%, #228B22 100%);
+    background: linear-gradient(to right, #000000 0%, #000000 100%);
 }
 }
 
 .topbar {
-    background: #228B22;
+    background: #FFB22B;
     background: -moz-linear-gradient(left, #533fd0 0%, #840fb5 100%);
     background: -webkit-linear-gradient(left, #533fd0 0%, #840fb5 100%);
-    background: linear-gradient(to right, #228B22 0%, #228B22 100%);
+    background: linear-gradient(to right, #000000 0%, #000000 100%);
 }
 
 .text-muted {
@@ -113,8 +113,8 @@
                                         <div class="input-group">
                                             <input class="form-control col-lg-3" type="text" name="purchase-amount" value="0" style="background-color: rgba(0,0,0,0); color: #fff; font-size: 24px; border: 1px solid #FCBD4E;text-align: center;">
                                             <div class="input-group-append">
-                                                <button class="btn btn-warning"><i class="right arrow icon"></i><font color="green"><b>Buy
-                                                    tokens</b></font>
+                                                <button class="btn btn-warning"><i class="right arrow icon"></i><b>Buy
+                                                    tokens</b>
                                                 </button>
                                             </div>
                                         </div>
@@ -149,12 +149,12 @@
                                 <div class="m-t-20">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <button class="btn btn-warning" id="setMax" type="input" value="Max"><font color="forestgreen"><b>Max</b></font>
+                                            <button class="btn btn-warning" id="setMax" type="input" value="Max"><b>Max</b>
                                             </button>
                                         </div>
                                         <input class="form-control col-lg-7" id="sellAmount" type="text" maxlength="12" minlength="1" min="0" max="999999" name="first-name" value="0" style="background-color: rgba(0,0,0,0); color: #fff; font-size: 24px; border: 1px solid #FCBD4E;text-align: center;">
                                         <div class="input-group-append">
-                                            <button class="btn btn-warning"><i class="right arrow icon"></i><font color="forestgreen"><b>Sell tokens</b></font>
+                                            <button class="btn btn-warning"><i class="right arrow icon"></i><b>Sell tokens</b>
                                             </button>
                                         </div>
                                     </div>
@@ -182,7 +182,7 @@
                         <div class="col-lg-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title"><font color="forestgreen"><b>Token vs ETH/contract</b></font></h4>
+                                    <h4 class="card-title"><font color="#000000"><b>Token vs ETH/contract</b></font></h4>
                                     <canvas id="chart1" height="200px;"></canvas>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                         <div class="col-lg-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title"><font color="forestgreen"><b>Price vs ETH/contract</b></font></h4>
+                                    <h4 class="card-title"><font color="#000000"><b>Price vs ETH/contract</b></font></h4>
                                     <canvas id="chart2" height="200px;"></canvas>
                                 </div>
                             </div>
@@ -198,15 +198,15 @@
                         <div class="col-lg-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title"><font color="forestgreen"><b>Accumulated Dividends</b></font></h4>
+                                    <h4 class="card-title"><b><font color="#000000">Accumulated Dividends</font></b></h4>
                                     <div class="col-lg-12">
                                         <div class="row">
                                             <div class="d-flex flex-row m-l-20 col-lg-12" id="myDividends">
                                                 <div class="round round-sm align-self-center round-info"><i class="ti-credit-card"></i></div>
                                                 <div class="m-l-10 align-self-center">
                                                     <h3 class="m-b-0 font-light identifier"><span class="soft"></span>
-                                                        <span class="count" id="divBalance"></span> ETH
-                                                        <small class="converted">(-USDT)</small>
+                                                        <span class="count" id="divBalance"></span> <font color="#000000">ETH
+                                                        <small class="converted">(-USDT)</small></font>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -214,8 +214,8 @@
                                         <hr>
                                         <div class="text-center">
                                             <button id="withdraw" class="btn btn-danger"><b>Withdraw Dividends</b></button>
-                                            <br>
-                                            <button id="reinvest" class="btn btn-warning"><font color="green"><b>Reinvest</b></font></button>
+                                            <br> <br>
+                                            <button id="reinvest" class="btn btn-warning"><b>Reinvest</b></button>
                                         </div>
                                     </div>
                                 </div>
@@ -225,16 +225,16 @@
                         <div class="col-lg-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title"><font color="forestgreen"><b>POND Tokens</b></font></h4>
+                                    <h4 class="card-title"><font color="#000000"><b>POND Tokens</b></font></h4>
                                     <div class="row">
                                         <div class="d-flex flex-row col-lg-12" id="myTokens" style="margin-bottom: 28px;">
                                             <div class="round round-sm align-self-center round-info"><i class="ti-wallet"></i>
                                             </div>
                                             <div class="m-l-10 align-self-center">
-                                                <h3 class="m-b-0 font-light"><span class="count" id="actualbalance"></span> POND
+                                                <h3 class="m-b-0 font-light"><span class="count" id="actualbalance"></span> <font color="#000000">POND</font>
                                                 </h3>
                                                 <br>
-                                                <h5><span id="curentBalanceEth"></span> ETH</h5>
+                                                <h5><span id="curentBalanceEth"></span> <font color="#000000">ETH</font></h5>
                                             </div>
                                         </div>
                                         <div class="d-flex flex-row col-lg-12" id="myTokens" style="margin-bottom: 16px;">
@@ -242,7 +242,7 @@
                                             </div>
                                             <div class="m-l-10 align-self-center">
                                                 <h3 class="m-b-0 font-light"><span class="converted"></span></h3>
-                                                <h5>Value in US Dollars</h5></div>
+                                                <h5><font color="#000000">Value in US Dollars</font></h5></div>
                                         </div>
                                     </div>
                                 </div>
@@ -254,9 +254,9 @@
 
                     <div class="card">
                         <div class="card-body">
-                          <h4 class="card-title"><font color="forestgreen"><b>Proof of No Dump! Stop Dumping!</b></font></h4>
+                          <h4 class="card-title"><font color="#000000"><b>Proof of No Dump! Stop Dumping!</b></font></h4>
                             <img src="./source/No-Dump.png" align="center">
-                         <p align="justify"><br><font color="green">To benefit the community,  we have created an anti-dump feature! Rather than the traditional 25% in and 25% out, we have created a fair and ground breaking approach. The community fee is 15% fee going in and 35% out. This accomplishes 2 things: Less pump and dump while allowing smaller investors to get in and buy more tokens for the same money! WIN FOR ALL!</font></p>
+                         <p align="justify"><br><font color="#000000">To benefit the community,  we have created an anti-dump feature! Rather than the traditional 25% in and 25% out, we have created a fair and ground breaking approach. The community fee is 15% fee going in and 35% out. This accomplishes 2 things: Less pump and dump while allowing smaller investors to get in and buy more tokens for the same money! WIN FOR ALL!</font></p>
                 
                             
                         </div>
@@ -265,7 +265,7 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body" style="height: 186px;">
-                            <h4 class="card-title"><font color="forestgreen"><b>Transfer Assets</b></font></h4>
+                            <h4 class="card-title"><font color="#000000"><b>Transfer Assets</b></font></h4>
                             <hr>
                             <div class="col-lg-12">
                                 <div class="row transfer">
@@ -289,7 +289,7 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title"><font color="forestgreen"><b>Your Referral Link!</b></font></h4>
+                            <h4 class="card-title"><font color="#000000"><b>Your Referral Link!</b></font></h4>
                             <small>
                                 <div class="column masternode hidden" style="text-align: center; float: left;">
                                     <div class="link" style="border: 0px solid #f2f2f2;"><strong><font size="3">https://proofofnodump.github.io/?masternode=youraddress</font></strong>
@@ -305,7 +305,7 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title"><font color="forestgreen"><b>Proof of No Dump</b></font></h4>
+                            <h4 class="card-title"><font color="#000000"><b>Proof of No Dump</b></font></h4>
                             <div style="overflow-y: auto; padding-right: 12px;">
                                 <div> How does it work?<br>
                                     <hr>
@@ -320,8 +320,7 @@
 2) You can sell your tokens at a higher rate, when the sell rate is more than your buy rate.   <br>
                                     </p>
                                     <p align="justify">
-                                        <i class="ti-crown" style="font-size: 32px; float: left; margin: 8px;"></i> As
-                                        To spread our system to a number of people, we have an affiliate system for you. If you have anything more than 50 POND tokens, you can refer anyone and get 30 percent of the transaction fee as your commission. Check the left sidebar to get your referral link.
+                                        <i class="ti-crown" style="font-size: 32px; float: left; margin: 8px;"></i>To spread our system to a number of people, we have an affiliate system for you. If you have anything more than 50 POND tokens, you can refer anyone and get 30 percent of the transaction fee as your commission. Check the left sidebar to get your referral link.
 
                                     </p>
                                   
@@ -334,13 +333,13 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title"><font color="forestgreen"><b>Proof of No Dump</b></font></h4>
+                            <h4 class="card-title"><font color="#000000"><b>Proof of No Dump</b></font></h4>
                             <div class="d-flex flex-row m-l-20 col-lg-12">
                                 <div class="round round-sm align-self-center round-info"><i class="ti-stats-up"></i>
                                 </div>
                                 <div class="m-l-10 align-self-center">
                                     <h3 class="m-b-0 font-light">  <span class="eth">
-                                    <b id="ethInContract">- Ethereum</b> in contract
+                                    <font color="#000000"><b id="ethInContract">- Ethereum</b> in contract</font>
                                 </span></h3>
                                     </div>
                             </div>
@@ -349,7 +348,7 @@
                                 <div class="round round-sm align-self-center round-info"><i class="ti-bar-chart-alt"></i></div>
                                 <div class="m-l-10 align-self-center">
                                     <h3 class="m-b-0 font-light">  <span class="eth">
-                                    <b id="tokensInCirculation">- Tokens</b> in circulation
+                                    <font color="#000000"><b id="tokensInCirculation">- Tokens</b> in circulation</font>
                                 </span></h3>
                                     </div>
                             </div>
@@ -366,14 +365,14 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title"><font color="forestgreen"><b>Frequently asked questions</b></font></h4>
+                            <h4 class="card-title"><font color="#000000"><b>Frequently asked questions</b></font></h4>
                             <h6 class="card-subtitle"></h6>
                             <div id="accordion1" role="tablist" aria-multiselectable="true">
                                 <div class="card m-b-0">
                                     <div class="card-header" role="tab" id="q1p">
                                         <h5 class="mb-0">
                                             <a data-toggle="collapse" data-parent="#q1" href="#q1" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                                                What are the exact fee amounts?
+                                               <b>What is your transaction fee?</b> 
                                             </a>
                                         </h5>
                                     </div>
@@ -392,7 +391,7 @@
                                     <div class="card-header" role="tab" id="q2p">
                                         <h5 class="mb-0">
                                             <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#q2" aria-expanded="false" aria-controls="collapseTwo2">
-                                                How much will I earn?
+                                                <b>How much will I earn? </b>
                                             </a>
                                         </h5>
                                     </div>
@@ -409,7 +408,7 @@
                                     <div class="card-header" role="tab" id="q3p">
                                         <h5 class="mb-0">
                                             <a class="collapsed" data-toggle="collapse" data-parent="#q3" href="#q3" aria-expanded="false" aria-controls="collapseTwo2">
-                                                How long dose it take to withdraw funds?
+                                               <b> How long dose it take to withdraw funds?</b>
                                             </a>
                                         </h5>
                                     </div>
@@ -425,7 +424,7 @@
                                     <div class="card-header" role="tab" id="q4p">
                                         <h5 class="mb-0">
                                             <a class="collapsed" data-toggle="collapse" data-parent="#q4" href="#q4" aria-expanded="false" aria-controls="collapseThree3">
-                                                Are my assets safe ?
+                                               <b> Are my assets safe ?  </b>
                                             </a>
                                         </h5>
                                     </div>
@@ -435,6 +434,7 @@
                                             authority for failure. All token functionality code is visible at and is
                                             executed automatically.
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -445,7 +445,7 @@
             </div>
         </div>
         <footer class="footer text-center">
-            	&copy; 2018 <a href="index.html"><strong>Proof of No Dump</strong></a>
+            	<h5><b>Copyright &copy; 2018 | All Rights Reserved | <a href="index.html">Proof of No Dump</b></h5></a>
         </footer>
     </div>
     <div class="chats">

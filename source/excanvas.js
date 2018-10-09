@@ -302,7 +302,7 @@ if (!document.createElement('canvas').getContext) {
     dodgerblue: '#1E90FF',
     firebrick: '#B22222',
     floralwhite: '#FFFAF0',
-    forestgreen: '#228B22',
+    #FFB22B: '#FFB22B',
     gainsboro: '#DCDCDC',
     ghostwhite: '#F8F8FF',
     gold: '#FFD700',
@@ -596,7 +596,7 @@ if (!document.createElement('canvas').getContext) {
 
     var overlayEl = el.cloneNode(false);
     // Use a non transparent background.
-    overlayEl.style.backgroundColor = 'forestgreen';
+    overlayEl.style.backgroundColor = '#FFB22B';
     overlayEl.style.filter = 'alpha(opacity=0)';
     canvasElement.appendChild(overlayEl);
 

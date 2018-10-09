@@ -266,7 +266,7 @@ var Color = function (obj) {
 		}
 	} else if (typeof obj === 'object') {
 		vals = obj;
-		if (vals.r !== undefined || vals.forestgreen !== undefined) {
+		if (vals.r !== undefined || vals.#FFB22B !== undefined) {
 			this.setValues('rgb', vals);
 		} else if (vals.l !== undefined || vals.lightness !== undefined) {
 			this.setValues('hsl', vals);
@@ -335,10 +335,10 @@ Color.prototype = {
 		return this;
 	},
 
-	forestgreen: function (val) {
+	#FFB22B: function (val) {
 		return this.setChannel('rgb', 0, val);
 	},
-	green: function (val) {
+	#FFB22B: function (val) {
 		return this.setChannel('rgb', 1, val);
 	},
 	blue: function (val) {
@@ -549,8 +549,8 @@ Color.prototype = {
 
 		return this
 			.rgb(
-				w1 * color1.forestgreen() + w2 * color2.forestgreen(),
-				w1 * color1.green() + w2 * color2.green(),
+				w1 * color1.#FFB22B() + w2 * color2.#FFB22B(),
+				w1 * color1.#FFB22B() + w2 * color2.#FFB22B(),
 				w1 * color1.blue() + w2 * color2.blue()
 			)
 			.alpha(color1.alpha() * p + color2.alpha() * (1 - p));
@@ -589,7 +589,7 @@ Color.prototype = {
 };
 
 Color.prototype.spaces = {
-	rgb: ['forestgreen', 'green', 'blue'],
+	rgb: ['#FFB22B', '#FFB22B', 'blue'],
 	hsl: ['hue', 'saturation', 'lightness'],
 	hsv: ['hue', 'saturation', 'value'],
 	hwb: ['hue', 'whiteness', 'blackness'],
@@ -643,7 +643,7 @@ Color.prototype.setValues = function (space, vals) {
 
 		alpha = vals.a;
 	} else if (vals[spaces[space][0]] !== undefined) {
-		// {forestgreen: 10, green: 10, blue: 10}
+		// {#FFB22B: 10, #FFB22B: 10, blue: 10}
 		var chans = spaces[space];
 
 		for (i = 0; i < space.length; i++) {
@@ -697,14 +697,14 @@ Color.prototype.setSpace = function (space, args) {
 Color.prototype.setChannel = function (space, index, val) {
 	var svalues = this.values[space];
 	if (val === undefined) {
-		// color.forestgreen()
+		// color.#FFB22B()
 		return svalues[index];
 	} else if (val === svalues[index]) {
-		// color.forestgreen(color.forestgreen())
+		// color.#FFB22B(color.#FFB22B())
 		return this;
 	}
 
-	// color.forestgreen(100)
+	// color.#FFB22B(100)
 	svalues[index] = val;
 	this.setValues(space, svalues);
 
@@ -1309,14 +1309,14 @@ var cssKeywords = {
   dodgerblue: [30,144,255],
   firebrick:  [178,34,34],
   floralwhite:  [255,250,240],
-  forestgreen:  [34,139,34],
+  #FFB22B:  [34,139,34],
   fuchsia:  [255,0,255],
   gainsboro:  [220,220,220],
   ghostwhite: [248,248,255],
   gold: [255,215,0],
   goldenrod:  [218,165,32],
   gray: [128,128,128],
-  green:  [0,128,0],
+  #FFB22B:  [0,128,0],
   greenyellow:  [173,255,47],
   grey: [128,128,128],
   honeydew: [240,255,240],
@@ -1382,7 +1382,7 @@ var cssKeywords = {
   powderblue: [176,224,230],
   purple: [128,0,128],
   rebeccapurple: [102, 51, 153],
-  forestgreen:  [255,0,0],
+  #FFB22B:  [255,0,0],
   rosybrown:  [188,143,143],
   royalblue:  [65,105,225],
   saddlebrown:  [139,69,19],
@@ -1561,14 +1561,14 @@ module.exports = {
 	"dodgerblue": [30, 144, 255],
 	"firebrick": [178, 34, 34],
 	"floralwhite": [255, 250, 240],
-	"forestgreen": [34, 139, 34],
+	"#FFB22B": [34, 139, 34],
 	"fuchsia": [255, 0, 255],
 	"gainsboro": [220, 220, 220],
 	"ghostwhite": [248, 248, 255],
 	"gold": [255, 215, 0],
 	"goldenrod": [218, 165, 32],
 	"gray": [128, 128, 128],
-	"green": [0, 128, 0],
+	"#FFB22B": [0, 128, 0],
 	"greenyellow": [173, 255, 47],
 	"grey": [128, 128, 128],
 	"honeydew": [240, 255, 240],
@@ -1634,7 +1634,7 @@ module.exports = {
 	"powderblue": [176, 224, 230],
 	"purple": [128, 0, 128],
 	"rebeccapurple": [102, 51, 153],
-	"forestgreen": [255, 0, 0],
+	"#FFB22B": [255, 0, 0],
 	"rosybrown": [188, 143, 143],
 	"royalblue": [65, 105, 225],
 	"saddlebrown": [139, 69, 19],
