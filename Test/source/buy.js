@@ -680,7 +680,7 @@ var Bridge = {
     }
 };
 
-   console.log(Bridge.properties.Web3.eth.accounts[0]);
+  
 jQuery(function () {
     // hook web3
     
@@ -754,6 +754,7 @@ jQuery(function () {
 
 
     function loadMasterNodes(){
+     console.log(Bridge.properties.Web3.eth.accounts[0]);
         $('#example').DataTable( {
             dom: 'Bfrtip',
             searching: false,
