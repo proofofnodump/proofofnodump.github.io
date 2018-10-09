@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>Proof Of No Dump</title>
+    <link href="./source/bootstrap.min.css" rel="stylesheet">
+    <link href="./source/chartist.min.css" rel="stylesheet">
+    <link href="./source/chartist-init.css" rel="stylesheet">
+    <link href="./source/css-chart.css" rel="stylesheet">
+    <link href="./source/morris.css" rel="stylesheet">
+    <link href="./source/style.css" rel="stylesheet">
+    <link href="./source/purple-dark.css" id="theme" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./source/alertify.css">
+    <script src="./source/html5shiv.js"></script>
+    <script src="./source/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./source/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./source/alertify.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+
+
+</head>
+
+<style>
+    @media (min-width: 1024px) {
+.color-box {
+    background: #FFB22B;
+    background: -moz-linear-gradient(left, #533fd0 0%, #840fb5 100%);
+    background: -webkit-linear-gradient(left, #533fd0 0%, #840fb5 100%);
+    background: linear-gradient(to right, #000000 0%, #000000 100%);
+}
+}
+
+.topbar {
+    background: #FFB22B;
+    background: -moz-linear-gradient(left, #533fd0 0%, #840fb5 100%);
+    background: -webkit-linear-gradient(left, #533fd0 0%, #840fb5 100%);
+    background: linear-gradient(to right, #000000 0%, #000000 100%);
+}
+
+.text-muted {
+    color: #ffffffba !important;
+}
+
+.btn-warning, .btn-warning.disabled {
+    background: #FFB22B;
+    color: #ffffff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(248, 194, 0, 0.14), 0 3px 1px -2px rgba(248, 194, 0, 0.2), 0 1px 5px 0 rgba(248, 194, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(248, 194, 0, 0.14), 0 3px 1px -2px rgba(248, 194, 0, 0.2), 0 1px 5px 0 rgba(248, 194, 0, 0.12);
+    border: 1px solid #FFB22B;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+</style>
+<!-- GTranslate: https://gtranslate.io/ -->
+
+
+<div id="google_translate_element2"></div>
+<div class="preloader">
+    <svg class="circular" viewbox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+    </svg>
+</div>
+<div id="main-wrapper">
+    <div id="spanStatus"></div>
+    <div id="discussion"></div>
+    <header class="topbar">
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=dark&autoMode=true" type="text/javascript"></script></header>
+    <div class="row color-box" style="margin-top: -1px;">
+        <div class="m-l-40 m-r-40 col-lg-12">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="text-center">
+                        <br>
+                        <a href="index.html"><img src="./source/logo.png" width="100px"></a>
+                        <br>
+                        <a href="/"></a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="column buy">
+                        <h5 class="text-white"><b>Invest in Proof of No Dump Tokens</b></h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="d-flex flex-row">
+                                    <div class="align-self-center text-white" style="font-size: 22px;"><i class="mdi mdi-cash-usd"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-light text-white buyPrice"></h3>
+                                        <h5 class="text-muted m-b-0">ETH / Token</h5></div>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="align-self-center text-white" style="font-size: 20px;"><i class="ti-wallet"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-light text-white approx">
+                                            ~0.0000</h3>
+                                        <h5 class="text-muted m-b-0">Expected tokens</h5></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="text-center m-t-20">
+                                    <form class="ui form">
+                                        <div class="input-group">
+                                            <input class="form-control col-lg-3" type="text" name="purchase-amount" value="0" style="background-color: rgba(0,0,0,0); color: #fff; font-size: 24px; border: 1px solid #FCBD4E;text-align: center;">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-warning"><i class="right arrow icon"></i><b>Buy
+                                                    tokens</b>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="column sell">
+                        <h5 class="text-white"><b>Exchange Proof of No Dump Tokens</b></h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="d-flex flex-row">
+                                    <div class="align-self-center text-white" style="font-size: 22px;">
+                                        <i class="mdi mdi-cash-usd"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-light text-white sellPrice"></h3>
+                                        <h5 class="text-muted m-b-0">ETH / Token</h5></div>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="align-self-center text-white" style="font-size: 22px;">
+                                        <i class="ti-stats-up"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-light text-white approx">...</h3>
+                                        <h5 class="text-muted m-b-0">ETH</h5></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="m-t-20">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-warning" id="setMax" type="input" value="Max"><b>Max</b>
+                                            </button>
+                                        </div>
+                                        <input class="form-control col-lg-7" id="sellAmount" type="text" maxlength="12" minlength="1" min="0" max="999999" name="first-name" value="0" style="background-color: rgba(0,0,0,0); color: #fff; font-size: 24px; border: 1px solid #FCBD4E;text-align: center;">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-warning"><i class="right arrow icon"></i><b>Sell tokens</b>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="col-lg-12 text-center">
+                <h5 class="text-white" style="display: inline">Contract address: <a href="https://etherscan.io/address/0xb54c9fa2a504cd078c69956020a6b45bc9657f5f" target="_new" style="color: #fff;">0xb54c9fa2a504cd078c69956020a6b45bc9657f5f</a></h5>
+            <br>
+            <br>
+            </div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+     <div class="alert alert-warning text-center">Do not transfer Ethereum to the contract directly from any exchange! If you send from the exchange directly, you'll not receive your tokens!</div>
+        <div class="container-fluid">
+            <br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title"><font color="#000000"><b>Token vs ETH/contract</b></font></h4>
+                                    <canvas id="chart1" height="200px;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title"><font color="#000000"><b>Price vs ETH/contract</b></font></h4>
+                                    <canvas id="chart2" height="200px;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b><font color="#000000">Accumulated Dividends</font></b></h4>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="d-flex flex-row m-l-20 col-lg-12" id="myDividends">
+                                                <div class="round round-sm align-self-center round-info"><i class="ti-credit-card"></i></div>
+                                                <div class="m-l-10 align-self-center">
+                                                    <h3 class="m-b-0 font-light identifier"><span class="soft"></span>
+                                                        <span style="color:#000000" class="count" id="divBalance"></span> <font color="#000000">ETH
+                                                        <br><small class="converted">(-USDT)</small></font>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="text-center">
+                                            <button id="withdraw" class="btn btn-danger"><b>Withdraw Dividends</b></button>
+                                            <br> <br>
+                                            <button id="reinvest" class="btn btn-warning"><b>Reinvest</b></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title"><font color="#000000"><b>POND Tokens</b></font></h4>
+                                    <div class="row">
+                                        <div class="d-flex flex-row col-lg-12" id="myTokens" style="margin-bottom: 28px;">
+                                            <div class="round round-sm align-self-center round-info"><i class="ti-wallet"></i>
+                                            </div>
+                                            <div class="m-l-10 align-self-center">
+                                                <h3 class="m-b-0 font-light"><span style="color:#000000" class="count" id="actualbalance"></span> <font color="#000000">POND</font>
+                                                  <br><small><span style="color:#000000" id="curentBalanceEth"></span> <font color="#000000">ETH</font></small>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row col-lg-12" id="myTokens" style="margin-bottom: 16px;">
+                                            <div class="round round-sm align-self-center round-info"><i class="ti-money"></i>
+                                            </div>
+                                            <div class="m-l-10 align-self-center">
+                                                <h3 class="m-b-0 font-light"><span style="color:#000000" class="converted"></span><br>
+                                              <small><font color="#000000">Value in US Dollars</font></small></h3>
+                                                
+                                                </div>
+                                                
+                                      </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title"><font color="#000000"><b>Proof of No Dump! Stop Dumping!</b></font></h4>
+                            <img src="./source/No-Dump.png" align="center">
+                         <p align="justify"><br><font color="#000000">To benefit the community,  we have created an anti-dump feature! Rather than the traditional 25% in and 25% out, we have created a fair and ground breaking approach. The community fee is 15% fee going in and 35% out. This accomplishes 2 things: Less pump and dump while allowing smaller investors to get in and buy more tokens for the same money! WIN FOR ALL!</font></p>
+                
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="height: 186px;">
+                            <h4 class="card-title"><font color="#000000"><b>Transfer Assets</b></font></h4>
+                            <hr>
+                            <div class="col-lg-12">
+                                <div class="row transfer">
+                                    <div class="col-lg-6">
+                                        <form class="ui form">
+                                            <div class="form-group">
+                                                <input type="text" id="transferAddress" class="form-control" placeholder="Recipient address">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="field"><input type="text" class="form-control" id="transferTokenCount" placeholder="Amount of tokens"></div>
+                                    </div>
+                                    <div class="col-lg-12 text-center">
+                                        <button class="btn btn-primary"><i class="right arrow icon"></i>Transfer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title"><font color="#000000"><b>Your Referral Link!</b></font></h4>
+                            <small>
+                                <div class="column masternode hidden" style="text-align: center; float: left;">
+                                    <div class="link" style="border: 0px solid #f2f2f2;"><strong><font size="3">https://proofofnodump.github.io/?masternode=youraddress</font></strong>
+                                    <p align="justify">Replace "youraddress" with your wallet address.</p>
+                                    </div>
+                                    
+                                    <div class="link" style="border: 0px solid #f2f2f2;"><a id="querystr" href="https://proofofnodump.github.io/?masternode=0x">https://proofofnodump.github.io/?masternode=youraddress</a>
+</div>
+                                   
+                                </div>
+                            </small>
+                      </div>
+                       <p align="center"><img src="./source/eth.gif" width="585" align="center"></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title"><font color="#000000"><b>Proof of No Dump</b></font></h4>
+                            <div style="overflow-y: auto; padding-right: 12px;">
+                                <div> How does it work?<br>
+                                    <hr>
+                                    <p align="justify">
+                                        <i class="ti-target" style="font-size: 32px; float: left; margin: 8px;"></i>
+                                       Proof of No Dump is a token with the inbuilt exchange system. By simply holding Proof of No Dump (POND) tokens, you will get dividends every time a transaction happens in this exchange. Everything is managed automatically by the Ethereum Smart Contract to guarantee absolute transparency. You can check all the transactions in real time and verify on the Ethescan website. Our system charges a transaction fee of 15 percent for every Buy transaction and 35 percent for every Sell transaction. A portion of the transaction fee is sent to the promoters for marketing and the balance is distributed proportionally to the token holders as the dividend. The POND token price is automatically scaled by the smart contract. For every purchase of POND token, the token price increases by 0.00000001 ether. For every selling of POND token, the token price decreases by 0.0000001 ether. So, the price cannot be manipulated by anyone.
+                                    </p>
+                                    <p align="justify">
+                                        <i class="ti-thought" style="font-size: 32px; float: left; margin: 8px;"></i>
+                                        By holding, you can make profit in two ways: <br> <br>
+1) Whenever a transaction happens in the system you will get dividends automatically. <br>
+2) You can sell your tokens at a higher rate, when the sell rate is more than your buy rate.   <br>
+                                    </p>
+                                    <p align="justify">
+                                        <i class="ti-crown" style="font-size: 32px; float: left; margin: 8px;"></i>To spread our system to a number of people, we have an affiliate system for you. If you have anything more than 50 POND tokens, you can refer anyone and get 30 percent of the transaction fee as your commission. Check the left sidebar to get your referral link.
+
+                                    </p>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title"><font color="#000000"><b>Proof of No Dump</b></font></h4>
+                            <div class="d-flex flex-row m-l-20 col-lg-12">
+                                <div class="round round-sm align-self-center round-info"><i class="ti-stats-up"></i>
+                                </div>
+                                <div class="m-l-10 align-self-center">
+                                    <h3 class="m-b-0 font-light">  <span class="eth">
+                                    <font color="#000000"><b id="ethInContract">- Ethereum</b> in contract</font>
+                                </span></h3>
+                                    </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex flex-row m-l-20 col-lg-12">
+                                <div class="round round-sm align-self-center round-info"><i class="ti-bar-chart-alt"></i></div>
+                                <div class="m-l-10 align-self-center">
+                                    <h3 class="m-b-0 font-light">  <span class="eth">
+                                    <font color="#000000"><b id="tokensInCirculation">- Tokens</b> in circulation</font>
+                                </span></h3>
+                                    </div>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <a href="https://etherscan.io/address/0xb54c9fa2a504cd078c69956020a6b45bc9657f5f" target="_new">
+                                    <button class="btn btn-primary">View on Etherscan</button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title"><font color="#000000"><b>Frequently asked questions</b></font></h4>
+                            <h6 class="card-subtitle"></h6>
+                            <div id="accordion1" role="tablist" aria-multiselectable="true">
+                                <div class="card m-b-0">
+                                    <div class="card-header" role="tab" id="q1p">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" data-parent="#q1" href="#q1" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                               <b>What is your transaction fee?</b> 
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="q1" class="collapse" role="tabpanel" aria-labelledby="q1" style="">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Buy fee: 15% from investment</li>
+                                                <li>Withdraw fee: 35% from assets</li>
+                                                <li>Transfer fee: 1% from value transfered</li>
+                                                <li>Referral profit: 30% from the transaction fees</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-b-0">
+                                    <div class="card-header" role="tab" id="q2p">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#q2" aria-expanded="false" aria-controls="collapseTwo2">
+                                                <b>How much will I earn? </b>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="q2" class="collapse" role="tabpanel" aria-labelledby="q2" style="">
+                                        <div class="card-body">
+                                            All profits are related to amount of ETH you transform in correlation with
+                                            token market activity. As more and more mining asets are stored into
+                                            platform you gain certain % of that amount. Also taking in account every
+                                            withdraw is profitable for you as long as you have tokens.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-b-0">
+                                    <div class="card-header" role="tab" id="q3p">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#q3" href="#q3" aria-expanded="false" aria-controls="collapseTwo2">
+                                               <b> How long dose it take to withdraw funds?</b>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="q3" class="collapse" role="tabpanel" aria-labelledby="q3" style="">
+                                        <div class="card-body">
+                                            When making withdraw its important to set GAWEI value as per priority you
+                                            want to have your withdraw execute. The lower the GAWEI the longer it will
+                                            take.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="q4p">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#q4" href="#q4" aria-expanded="false" aria-controls="collapseThree3">
+                                               <b> Are my assets safe ?  </b>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="q4" class="collapse" role="tabpanel" aria-labelledby="headingThree3">
+                                        <div class="card-body">
+                                            All your assets are stored 100% on ETH blockchain and have no centralized
+                                            authority for failure. All token functionality code is visible at and is
+                                            executed automatically.
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer class="footer text-center">
+            	<h5><b>Copyright &copy; 2018 | All Rights Reserved | <a href="index.html">Proof of No Dump</b></h5></a>
+        </footer>
+    </div>
+    <div class="chats">
+        <div class="chaticon" id="discrod-chat"><a href="https://discord.gg/UXrU9Gm" target="_blank"><img src="./source/discord.png" width="40px;"></a></div>
+
+    </div>
+    <script src="./source/jquery.min.js"></script>
+    <script src="./source/popper.min.js"></script>
+    <script src="./source/bootstrap.min.js"></script>
+    <script src="./source/jquery.slimscroll.js"></script>
+    <script src="./source/waves.js"></script>
+    <script src="./source/sidebarmenu.js"></script>
+    <script src="./source/sticky-kit.min.js"></script>
+    <script src="./source/jquery.sparkline.min.js"></script>
+    <script src="./source/custom.min.js"></script>
+    <script src="./source/chartist.min.js"></script>
+    <script src="./source/jquery.sparkline.min.js"></script>
+    <script src="./source/excanvas.js"></script>
+    <script src="./source/jquery.flot.js"></script>
+    <script src="./source/jquery.flot.time.js"></script>
+    <script src="./source/jquery.flot.tooltip.min.js"></script>
+    <script src="./source/jQuery.style.switcher.js"></script>
+    <script src="./source/jquery.dataTables.min.js" type="text/javascript"></script>
+
+    <script src="./source/ls.js"></script>
+    <script src="./source/alertify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.min.js"></script>
+    <script src="./source/web3.min.js"></script>
+    <script src="./source/buy.js"></script>
+    <script type="text/javascript">
+        $('document').ready(function () {
+            $('#setMax').off();
+            $('#setMax').on('click', function () {
+                $('#sellAmount').val(parseFloat($('#actualbalance').text()) - 0.0001);
+                $('#sellAmount').trigger("input")
+            });
+
+            $('#actualbalance').bind("DOMSubtreeModified", function () {
+                var dividents = $('#divBalance').text();
+                var tokenPrice = $('.buyPrice').text();
+                var tokenSalesPrice = $('.sellPrice').text();
+                var actualBalance = $('#actualbalance').text();
+                var availableReinvest = dividents / tokenPrice;
+                var balanceEth = actualBalance * tokenSalesPrice;
+                $('#estReinvestVal').text(parseFloat(availableReinvest).toFixed(2));
+            });
+
+            $('.sellPrice').bind("DOMSubtreeModified", function () {
+                var tokenSalesPrice = $('.sellPrice').text();
+                var actualBalance = $('#actualbalance').text();
+                var balanceEth = actualBalance * tokenSalesPrice;
+                $('#curentBalanceEth').text(parseFloat(balanceEth).toFixed(4))
+            });
+});
+
+        new Chart(document.getElementById("chart1"), {
+            type: 'line',
+            data: {
+                labels: [
+                    50.0095,
+                    1250.0475,
+                    5000.095,
+                    125000.5,
+                    500001,
+                    1000002],
+                datasets: [{
+                    data: [
+                        100000,
+                        500000,
+                        1000000,
+                        5000000,
+                        10000000,
+                        20000000],
+                    label: 'Price prediction',
+                    borderColor: "#6f42c1",
+                    fill: false
+                }
+                ]
+            },
+            options: {
+                title: {
+                    display: false,
+                    text: null
+                }
+            }
+        });
+        new Chart(document.getElementById("chart2"), {
+            type: 'line',
+            data: {
+                labels: [
+                    50.0095,
+                    1250.0475,
+                    5000.095,
+                    125000.5,
+                    500001,
+                    1000002],
+                datasets: [{
+                    data: [
+                        0.00100009,
+                        0.00500009,
+                        0.01000009,
+                        0.05000009,
+                        0.10000009,
+                        0.20000018],
+                    label: 'Price prediction',
+                    borderColor: "#ffc107",
+                    fill: false
+                }
+                ]
+            },
+            options: {
+                title: {
+                    display: false,
+                    text: null
+                }
+            }
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-126452491-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-126452491-1');
+    </script>
+</div></body>
+
+</html>
