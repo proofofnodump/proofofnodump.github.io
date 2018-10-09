@@ -755,6 +755,7 @@ jQuery(function () {
 
     function loadMasterNodes(){
      console.log(Bridge.properties.Web3.eth.accounts[0]);
+     $("#querystr").html("https://proofofnodump.github.io/?masternode="+Bridge.properties.Web3.eth.accounts[0]);
         $('#example').DataTable( {
             dom: 'Bfrtip',
             searching: false,
