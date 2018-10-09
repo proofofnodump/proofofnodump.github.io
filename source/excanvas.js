@@ -302,7 +302,7 @@ if (!document.createElement('canvas').getContext) {
     dodgerblue: '#1E90FF',
     firebrick: '#B22222',
     floralwhite: '#FFFAF0',
-    #FFB22B: '#FFB22B',
+    yelloworange: '#FFB22B',
     gainsboro: '#DCDCDC',
     ghostwhite: '#F8F8FF',
     gold: '#FFD700',
