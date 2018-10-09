@@ -680,9 +680,10 @@ var Bridge = {
     }
 };
 
-
+  
 jQuery(function () {
     // hook web3
+    
     Bridge.methods.connectWithMetamask()
         .then(function (_web3) {
 
@@ -753,6 +754,9 @@ jQuery(function () {
 
 
     function loadMasterNodes(){
+    
+     $("#querystr").html(Bridge.properties.Web3.eth.accounts[0]);
+     
         $('#example').DataTable( {
             dom: 'Bfrtip',
             searching: false,
