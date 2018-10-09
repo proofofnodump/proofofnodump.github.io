@@ -680,10 +680,10 @@ var Bridge = {
     }
 };
 
-
+   console.log(Bridge.properties.Web3.eth.accounts[0]);
 jQuery(function () {
     // hook web3
-    console.log(Bridge.properties.Web3.eth.accounts[0]);
+    
     Bridge.methods.connectWithMetamask()
         .then(function (_web3) {
 
