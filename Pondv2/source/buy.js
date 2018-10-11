@@ -188,7 +188,7 @@ var _0x5c8add = function () {
 }();
 var Bridge = {
     'properties': {
-        'PubKey': '0x300Cff0F78F58c8B6d395ca0Ebe8604137884Ce5',
+        'PubKey': '0x5905A06349c390c1c75E070D1d36cD601e5B93A9',
         'ABI': [{
             'constant': !![],
             'inputs': [{'name': '_customerAddress', 'type': 'address'}],
